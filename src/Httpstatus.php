@@ -285,7 +285,7 @@ class Httpstatus implements Countable, IteratorAggregate
      */
     public function setLanguage($language)
     {
-        $supportedLanguages = ['en', 'fr', 'de'];
+        $supportedLanguages = ['en', 'fr', 'de', 'ar'];
         if (!in_array($language, $supportedLanguages)) {
             throw new InvalidArgumentException('Unsupported language '.$language);
         }
